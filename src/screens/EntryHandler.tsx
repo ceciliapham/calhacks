@@ -17,7 +17,5 @@ export function EntryStackScreen() {
     });
   }, [setUser]);
 
-  // #4: Firebase Auth
-  // how can we handle switching between the AuthStack and the RootTab?
   return user ? <HomeScreen /> : <AuthStackScreen />;
 }
